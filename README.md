@@ -1,16 +1,9 @@
 # Διπλωματική Εργασία 
 
-Data: Περιέχει το τελικό αρχείο Final.xlsx που συνθέτει το τελικό σύνολο δεδομένων. Προκύπτει από την συγχώνευση και επεξεργασία τριών ετερογενών συνόλων δεδομένων (FIFA, FBref, Understat). Τα δεδομένα για κάθε ποδοσφαιριστή είναι ταξινομημένα κατά χρονολογική σειρά. Πρόκειται για season-level στατιστικά ποδοσφαιριστών από τα 5 μεγάλα ευρωπαικά πρωταθλήματα (Premier League, La Liga, Bundesliga, Serie A, Ligue 1), καθώς και οι τιμές των ικανοτήτων τους από το σύνολο δεδομένων του FIFA. Αγωνιστικές περίοδοι 2017-18 έως 2022-23.
-
-Τα δεδομένα από το ηλεκρονικό παιχνίδι FIFA αντλήθηκαν από το Kaggle: https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database
-Τα δεδομένα από το Undersat από το GitHub: https://github.com/douglasbc/scraping-understat-dataset/tree/main/datasets
-fbref_scrap.R: Περιέχει τον κώδικα σε R ώστε με web scrapping να κατεβάσουμε δεδομένα από το site FBref 
 
 merg.py: Το τελικό σύνολο δεδομένων που περιέχει όλα τα στοιχεία των παικτών. Τα πραγματικά στατιστικά τους ανά χρονιά και αυτά που διαθέτουν σαν ικανότητες στο FIFA 
 
-all_seasons.py: Εδώ ενώνω τα ξεχωριστά σύνολα για κάθε σεζον σε ένα ενιαίο σύνολο για time series format ώστε να προκύψει το τελικό σύνολο δεδομένων Final.xlsx
-
--> Στα τελικό Dataset γίνεται Exploratory Data Analysis (Eda.py) για οπτικοποίηση της κατανομής οριμένων μεταβλητών καθώς και Anommaly Detection για outiers που συναντάμε στο σύνολο δεδομένων. Επίσης πραγματοποείται correlation analysis για εντοπισμό συσσχετίσεων μεταξύ μεταβλητών (corr.py)
+-> Πραγματοποείται correlation analysis για εντοπισμό συσσχετίσεων μεταξύ μεταβλητών (corr.py)
 
 -> Θα υλοποιηθούν 4 μοντέλα Παλινδρόμησης (Linear Regression, Ridge Regression, Random Forest, XGBoost) για πρόβλεψη της μεταβολής του "overall" των ποδοσφαιριστών σε ένα time series forecasting πρόβλημα (Baseline_ml.py).
 
